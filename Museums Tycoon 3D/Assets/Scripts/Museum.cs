@@ -19,7 +19,6 @@ public class Museum : MonoBehaviour {
 				go.transform.SetParent(this.transform);
 				rooms [x, y] = go.GetComponent<Room> ();
 				rooms [x, y].SetUpWalls (x,y);
-
 			}
 		}
 	}

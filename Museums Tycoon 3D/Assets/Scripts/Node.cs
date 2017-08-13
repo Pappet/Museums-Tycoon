@@ -12,7 +12,7 @@ public class Node : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(hasItem){
-			SetItem ();
+			SetItem (ItemPrefab);
 		}
 	}
 	
@@ -21,8 +21,8 @@ public class Node : MonoBehaviour {
 		
 	}
 
-	void SetItem(){
-		placedItem = Instantiate (ItemPrefab,transform.position, Quaternion.identity);
+	void SetItem(GameObject Item){
+		placedItem = Instantiate (Item,transform.position, Quaternion.identity);
 		placedItem.transform.SetParent (transform);
 	}
 
