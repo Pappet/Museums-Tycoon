@@ -27,4 +27,8 @@ public class Museum : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public Room ReturnRandomRoom(){
+		return rooms[Random.Range(0,width),Random.Range(0,height)];
+	}
 }

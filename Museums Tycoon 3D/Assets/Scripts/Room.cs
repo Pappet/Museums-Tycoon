@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Room : MonoBehaviour {
 
-	public Museum museum;
+	Museum museum;
 	public GameObject Wall_North;
 	public GameObject Wall_East;
 	public GameObject Wall_South;
