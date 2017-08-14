@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Museum : MonoBehaviour {
 
-
+	public List<Node> Nodes = new List<Node>();
 	// Use this for initialization
 	void Start () {
 		
@@ -13,5 +13,9 @@ public class Museum : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public Node ReturnRandomNode(){
+		return Nodes [Random.Range (0, Nodes.Count)];
 	}
 }

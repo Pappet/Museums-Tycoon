@@ -353,6 +353,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4591132782010630, guid: 0d093dd8d69317449a7a20185d305c58,
     type: 2}
   m_PrefabInternal: {fileID: 101933871}
+--- !u!114 &221744353 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114731841697142580, guid: 0d093dd8d69317449a7a20185d305c58,
+    type: 2}
+  m_PrefabInternal: {fileID: 101933871}
+  m_Script: {fileID: 11500000, guid: 1aaa5d09c64455e4ea3113a3289bdf18, type: 3}
 --- !u!1001 &651519161
 Prefab:
   m_ObjectHideFlags: 0
@@ -392,18 +398,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4714874836705048, guid: 88d4d0304c0fe8a4387e1e92e08e18ac, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4714874836705048, guid: 88d4d0304c0fe8a4387e1e92e08e18ac, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4714874836705048, guid: 88d4d0304c0fe8a4387e1e92e08e18ac, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 114878644416388256, guid: 88d4d0304c0fe8a4387e1e92e08e18ac,
+        type: 2}
+      propertyPath: museum
+      value: 
+      objectReference: {fileID: 989813508}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88d4d0304c0fe8a4387e1e92e08e18ac, type: 2}
   m_IsPrefabParent: 0
@@ -434,6 +433,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb12fe444a4ed2448b46d09b9735086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Nodes:
+  - {fileID: 221744353}
+  - {fileID: 1812299058}
+  - {fileID: 1242549255}
+  - {fileID: 92206058}
 --- !u!4 &989813509
 Transform:
   m_ObjectHideFlags: 0
@@ -898,31 +902,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panSpeed: 20
   panLimit: {x: 3, y: 3}
---- !u!1 &1637334755 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1154501887030922, guid: 88d4d0304c0fe8a4387e1e92e08e18ac,
-    type: 2}
-  m_PrefabInternal: {fileID: 651519161}
---- !u!195 &1637334761
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1637334755}
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1 &1680896751
 GameObject:
   m_ObjectHideFlags: 0
